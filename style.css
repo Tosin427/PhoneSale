@@ -1,0 +1,142 @@
+/* Declare Root */
+:root {
+    --primayColor: #f1f1f1;
+    --black: #222;
+    --black2: #555;
+    --black3: #252525;
+    --black4: #000;
+    --black5: #212529;
+    --orange: #eb0028;
+    --white: #fff;
+    --grey: #959595;
+    --grey2: #666;
+    --grey3: #ccc;
+    --secondaryColor: #2b1f4d;
+    --yellow: #ffcc00;
+    --green: #59b210;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 65.5%;
+    box-sizing: border-box;
+}
+
+body, input {
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family: 'Archivo', sans-serif;
+    color: var(--black);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+h3, h4 {
+    font-weight: 500;
+}
+
+
+/* Header Styling */
+.header {
+    position: relative;
+}
+
+.container {
+    width: 100%;
+    max-width: 117rem;
+    margin: 0 auto;
+    padding: 0 1.6rem;
+}
+
+
+/* Navigation */
+.navigation {
+    position: relative;
+    height: 7rem;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, .1);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 7rem;
+    width: 100%;
+    padding: 0 1rem;
+}
+
+
+.nav__logo a {
+    font-size: 2.5rem;
+    color: var(--black);
+    padding: 1.6rem;
+    font-weight: 700;
+}
+
+.nav__hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.nav__hamburger svg {
+    height: 2.3rem;
+    width: 2.3rem;
+}
+
+.menu__top {
+    display: none;
+}
+
+.nav__menu {
+    width: 50%;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+}
+
+.nav__item:not(:last-child) {
+    margin-right: 1.6rem;
+  }
+
+  .nav__list .nav__link:link,
+  .nav__list .nav__link:visited {
+    display: inline-block;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: var(--black);
+    transition: color 0.3s ease-in-out;
+  }
+
+.nav__list .nav__link:hover {
+    color: var(--orange);
+}
+
+.nav__icons {
+    display: flex;
+    position: relative;
+  }
+
+.nav__icons .icon_item svg {
+    width: 1.6rem;
+    height: 1.6rem;
+}
