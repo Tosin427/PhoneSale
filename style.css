@@ -136,7 +136,7 @@ h3, h4 {
     position: relative;
   }
 
-.nav__icons .icon_item svg {
+.nav__icons .icon__item svg {
     width: 1.6rem;
     height: 1.6rem;
 }
