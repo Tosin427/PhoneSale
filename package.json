@@ -1,0 +1,23 @@
+{
+  "name": "PhoneSale",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tosin427/PhoneSale.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tosin427/PhoneSale/issues"
+  },
+  "homepage": "https://github.com/Tosin427/PhoneSale#readme",
+  "dependencies": {
+    "@glidejs/glide": "^3.4.1"
+  }
+}
