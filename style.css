@@ -235,7 +235,7 @@ h3, h4 {
         width: 100%;
     }
 
-    .nav__list .nav__list:link,
+    .nav__list .nav__link:link,
     .nav__list .nav__link:visited {
         padding: 1.6rem;
         width: 100%;
@@ -287,7 +287,7 @@ h3, h4 {
 
 .hero .glide__arrow {
     padding: 1.5rem 1.7rem;
-    opacity: 0.5;
+    opacity: 0;
     border: none;
     background-color: var(--grey);
     transition: all 0.5s ease-in-out 0.2s;
@@ -295,7 +295,7 @@ h3, h4 {
 
 
 .glide__arrow:hover {
-    background-color: var(--black);
+    background-color: var(--black3);
 }
 
 .glide__arrow--left {
@@ -305,6 +305,10 @@ h3, h4 {
 .glide__arrow--right {
     position: absolute;
     right: 20rem;
+}
+
+.hero:hover .glide__arrow {
+    opacity: 1;
 }
 
 .hero:hover .glide__arrow--left {
