@@ -600,6 +600,10 @@ h3, h4 {
     transition: opacity 0.3s ease-in-out;
 }
 
+.section__titles:not(:last-child) {
+    margin-right: 1.5rem;
+}
+
 span.dot {
     opacity: .6;
     padding: .45rem;
@@ -738,7 +742,7 @@ span.dot::before {
           flex-direction: column;
       }
 
-      .section__title:not(:last-child){
+      .section__titles:not(:last-child){
           margin: 0 0 1.3rem;
       }
   }
@@ -798,4 +802,143 @@ span.dot::before {
   .product__btn:hover {
       background-color: var(--black);
       color: var(--primaryColor);
+  }
+
+
+  .latest__products .glide__arrow,
+  .related__products .glide__arrow
+   {
+        background-color: transparent;
+        border: 1px solid var(--primaryColor);
+        outline: none;
+        border-radius: 0;
+        box-shadow: 0.25rem 0.5rem 0 rgb(0, 0, 0, 0);
+        top: -7%;
+        left: 80%;
+  }
+
+
+  .latest__products .glide__arrow:hover,
+  .related__products .glide__arrow:hover {
+      background-color: var(--orange);
+      border: 1px solid var(--primaryColor);
+  }
+
+  .latest__products .glide__arrow--left,
+  .related__products .glide__arrow--left {
+      left: 75%
+  }
+
+  .latest__products .glide__arrow--right,
+  .related__products .glide__arrow--right {
+      right: 5%
+  }
+
+  .latest__products .glide__arrow svg,
+  .related__products .glide__arrow svg {
+      width: 1.5rem;
+      height: 1.5rem;
+      fill: var(--grey);
+  }
+
+
+  /* Media for Latest Products */
+
+  @media only screen and (max-width: 999px){
+      .product__header {
+          height: 25rem;
+
+      }
+
+      .product {
+          width: 70%;
+          margin: 0 auto;
+      }
+
+      .latest__products .glide__arrow--left,
+      .related__products .glide__arrow--left {
+          left: 73%;
+      }
+
+      .latest__products .glide__arrow--right,
+      .related__products .glide__arrow--right {
+          right: 7%;
+      }
+  }
+
+
+  @media only screen and (max-width: 768px) {
+      .latest__products .glide__arrow--left,
+      .related__products .glide__arrow--left{
+          left: 70%;
+      }
+  }
+
+
+  @media only screen and (max-width: 568px) {
+      .product__header {
+          height: 20rem;
+      }
+
+      .product__header img {
+          width: 50%;
+      }
+
+      .product__footer h3 {
+          font-size: 1.4rem;
+      }
+
+      .products__btn {
+          width: 100%;
+          font-size: 1rem;
+          padding: 0.8rem 0;
+          border: 1px solid var(--black);
+      }
+
+      .product ul a {
+          width: 2.7rem;
+          height: 2.7rem;
+      }
+
+      .product ul {
+          top: 25%;
+          left: 50%;
+          width: 16rem;
+          height: 4rem;
+      }
+
+      .rating svg {
+          width: 1.3rem;
+          height: 1.3rem;
+      }
+
+      .latest__products .glide__arrow--left,
+      .related__products .glide__arrow--left {
+          left: 66%;
+      }
+
+      .latest__products .glide__arrow--right,
+      .related__products .glide__arrow--right {
+          right: 85%;
+      }
+  }
+
+
+  @media only screen and (max-width: 460px) {
+      .product__header {
+          height: 12rem;
+      }
+
+      .product__footer h3{
+          font-size: 1.2rem;
+      }
+  }
+
+
+  /* Catergory Area */
+
+  .category__center {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 3rem 2rem;
   }

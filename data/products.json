@@ -1,0 +1,20 @@
+{
+    "products": [{
+        "id": 6,
+        "title": "Apple iPhone 11",
+        "image": "./images/products/iphone/iphone3.jpeg",
+        "price": 200000,
+        "category": "Featured Products"
+    },
+
+    {
+        "id": 3,
+        "title": "Sony WH-CH510",
+        "image": "./images/products/headphone/headphone2.jpeg",
+        "price": 250000,
+        "category": "Special Products"
+    }
+
+
+]
+}
